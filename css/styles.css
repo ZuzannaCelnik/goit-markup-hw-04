@@ -469,34 +469,30 @@ img{
 }
 /* Nasi klienci */
 .clients{}
+
 .clients-list{
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
-.clients-item{
-    border: 1px solid var(--icon-grey);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-.clients-item:hover,
-.clients-item:focus{
-    fill: var(--brand-blue);
-    border: 1px solid var(--brand-blue);
-    box-sizing: border-box;
-    border-radius: 4px;
-}
+
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
-.clients-link{}
-.clients-link:hover,
-.clients-link:focus{}
-.clients-icon{
+.clients-link{
+    display: flex;
+    padding: 18px 32px 14px 32px;
+    border: 1px solid var(--icon-grey);
+    border-radius: 4px;
     fill: var(--icon-grey);
-    width: 106px;
-    height: 60px;
 }
+
+.clients-link:hover,
+.clients-link:focus{
+    fill: var(--brand-blue);
+    border-color: var(--brand-blue);
+}
+
 
 /* MAIN END */
 
