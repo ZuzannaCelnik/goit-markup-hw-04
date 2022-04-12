@@ -2,6 +2,7 @@
     --brand-blue: #2196F3;
     --main-black: #212121;
     --main-grey: #757575;
+    --icon-grey: #AFB1B8;
     --footer-contact-col: rgba(255, 255, 255, 0.6);
     --background-colour: #2F303A;
     --background-colour-team: #F5F4FA;
@@ -54,6 +55,9 @@ img{
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.no-bullets-list{
+    list-style: none;
 }
 
 /* HEADER START */
@@ -109,7 +113,6 @@ img{
 
     display: flex;
     align-items: center;
-
     }
 .header-nav:hover,
 .header-nav:focus
@@ -156,10 +159,12 @@ img{
     letter-spacing: 0.02em;
     line-height: 1.143;
     color: var(--main-grey);
-}
+    fill: var(--main-grey);
+    }
 .header-contacts-item:hover,
 .header-contacts-item:focus{
     color: var(--brand-blue);
+    fill: var(--brand-blue);
 }
 .header .header-contacts{
     margin-left: auto;
@@ -167,9 +172,10 @@ img{
 .header-contacts-list:not(:last-child){
     margin-right: 50px;
 }
-.no-bullets-list{
-    list-style: none;
+.contact-icon{
+    margin-right: 10px;
 }
+
 /* HEADER END */
 
 /* HERO START */
@@ -422,16 +428,36 @@ img{
     margin-bottom: 30px;
 }
 .social-list{
-
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
-.social-list-item{
-
-}
+.social-list-item{}
 .social-list-link{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-grey);
+    width: 44px;
+    height: 44px;
+    background-color: var(--white);
+    border-radius: 50%;
 }
-.Social-icon{
-    
+.social-list-link:hover,
+.social-list-link:focus{
+    fill: var(--white);
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand-blue);
+    border-radius: 50%;
+}
+.social-icon{
+    width: 20px;
+    height: 20px;
+}
+.social-icon:hover,
+.social-icon:focus{
+    fill: var(--white);
 }
 /* MAIN END */
 
@@ -490,4 +516,39 @@ img{
 }
 .footer-address:not(:last-child){
     margin-bottom: 9px;
+}
+.footer-h4{
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.footer-social-list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social-item{}
+
+.footer-social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    width: 44px;
+    height: 44px;
+    background-color: var(--brand-blue);
+    border-radius: 50%;
+}
+
+.footer-social-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
 }
