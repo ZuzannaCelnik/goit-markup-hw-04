@@ -466,22 +466,24 @@ img{
     align-content: center;
     justify-content: space-between;
 }
-.clients-item:not(:last-child){
-    margin-right: 30px;
-}
-.clients-link{
+.clients-item{
     border: 1px solid var(--icon-grey);
     box-sizing: border-box;
     border-radius: 4px;
 }
-.clients-link:hover,
-.clients-link:focus{
+.clients-item:hover,
+.clients-item:focus{
     fill: var(--brand-blue);
     border: 1px solid var(--brand-blue);
     box-sizing: border-box;
     border-radius: 4px;
-
 }
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+.clients-link{}
+.clients-link:hover,
+.clients-link:focus{}
 .clients-icon{
     fill: var(--icon-grey);
     width: 106px;
