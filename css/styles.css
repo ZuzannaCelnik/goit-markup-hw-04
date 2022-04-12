@@ -353,6 +353,14 @@ img{
     line-height: 1.714;
     white-space: pre;
 }
+.atuty-icon{
+    background-color: var(--background-colour-team);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;    
+
+}
 /* index - czym się zajmuje */
 .activities-list{
     /* margin-bottom: 94px; */
