@@ -175,9 +175,17 @@ img{
 /* HERO START */
 /* index - hero */
 .hero{
+    background-image: 
+    linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("/images/hero-bg.jpg");
     background-color: var(--background-colour);
     padding-top: 200px;
     padding-bottom: 210px;
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: contain;
 }
 .hero .container{
     width: 696px;
@@ -412,6 +420,18 @@ img{
     text-align: center;
 
     margin-bottom: 30px;
+}
+.social-list{
+
+}
+.social-list-item{
+
+}
+.social-list-link{
+
+}
+.Social-icon{
+    
 }
 /* MAIN END */
 
