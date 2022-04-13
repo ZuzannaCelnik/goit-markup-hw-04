@@ -188,10 +188,10 @@ img{
         url("../images/hero-bg.jpg");
     background-color: var(--background-colour);
     padding-top: 200px;
-    padding-bottom: 210px;
+    padding-bottom: 200px;
     background-repeat: no-repeat;  
     background-position: center;
-    background-size: contain;
+    background-size: 1600px 600px;
 }
 .hero .container{
     width: 696px;
@@ -292,6 +292,12 @@ img{
 .pictures-menu-item{
     background: var(--white);
       }
+.pictures-menu-item:hover,
+.pictures-menu-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .main-menu-header{
     font-family: var(--text-font);
     font-size: 18px;
@@ -357,9 +363,8 @@ img{
     background-color: var(--background-colour-team);
     width: 270px;
     height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;    
-
+    padding: 25px 100px;
+    margin-bottom: 30px;
 }
 /* index - czym się zajmuje */
 .activities-list{
@@ -439,6 +444,9 @@ img{
     display: flex;
     align-content: center;
     justify-content: space-around;
+    margin-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .social-list-item{}
 .social-list-link{
